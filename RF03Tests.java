@@ -24,7 +24,7 @@ public class RF03Tests {
 		};
 		for (String mensaje : mensajes) {
 			Assert.assertEquals(
-					"@delucas son las 3:15 PM",
+				"@delucas son las 3:15 PM",
 					jenkins.escuchar(mensaje)
 			);
 		}
@@ -33,13 +33,13 @@ public class RF03Tests {
 	@Test
 	public void fecha() {
 		String[] mensajes = {
-				"Â¿qué día es, @jenkins?",
+				"¿qué día es, @jenkins?",
 				"@jenkins, la fecha por favor",
 				"me decís la fecha @jenkins?"
 		};
 		for (String mensaje : mensajes) {
 			Assert.assertEquals(
-					"@delucas hoy es 1 de abril de 2018",
+					"@delucas hoy es 1 de Abril de 2018",
 					jenkins.escuchar(mensaje)
 			);
 		}
